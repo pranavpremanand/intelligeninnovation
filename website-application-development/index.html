@@ -1368,16 +1368,17 @@
           to: "info@intelligeninnovations.com",
           subject: subject,
           body: emailBody,
+          name:"Intelligen Innovations"
         };
 
         // Use Fetch API to send the request to your API
-        fetch("https://smtp-api-tawny.vercel.app/send-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        })
+            fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+            })
           .then((response) => response.json())
           .then((data) => {
             document.getElementById("name").value = "";
@@ -1447,16 +1448,17 @@
           to: "info@intelligeninnovations.com",
           subject: subject,
           body: emailBody,
+          name:"Intelligen Innovations"
         };
 
         // Use Fetch API to send the request to your API
-        fetch("https://smtp-api-tawny.vercel.app/send-email", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify(payload),
-        })
+            fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(payload),
+            })
           .then((response) => response.json())
           .then((data) => {
             document.getElementById("name1").value = "";

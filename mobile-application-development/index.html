@@ -1131,10 +1131,11 @@
                 to: "info@intelligeninnovations.com",
                 subject: subject,
                 body: emailBody,
+                name:"Intelligen Innovations"
             };
 
             // Use Fetch API to send the request to your API
-            fetch("https://smtp-api-tawny.vercel.app/send-email", {
+            fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -1149,11 +1150,10 @@
                     document.getElementById("phone").value = "";
                     document.getElementById("message").value = "";
                     document.getElementById("subject").value = "";
-                    // alert('Email sent!');
                     const success = document.getElementById("success-message");
                     success.innerText = "Email sent!";
                     success.classList.remove("d-none");
-                    location.href = "./website-application-development/thankyou.html";
+                    location.href = "./thankyou.html";
 
                     setTimeout(() => {
                         success.classList.add("d-none");
@@ -1210,10 +1210,11 @@
                 to: "info@intelligeninnovations.com",
                 subject: subject,
                 body: emailBody,
+                name:"Intelligen Innovations"
             };
 
             // Use Fetch API to send the request to your API
-            fetch("https://smtp-api-tawny.vercel.app/send-email", {
+            fetch("https://send-mail-redirect-boostmysites.vercel.app/send-email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
@@ -1232,7 +1233,7 @@
                     const success = document.getElementById("success-message1");
                     success.innerText = "Email sent!";
                     success.classList.remove("d-none");
-                    location.href = "./website-application-development/thankyou.html";
+                    location.href = "./thankyou.html";
 
                     setTimeout(() => {
                         success.classList.add("d-none");
