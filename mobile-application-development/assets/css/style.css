@@ -5810,3 +5810,26 @@ html[dir=rtl] .newsletter-subscrib.v1 .content-right button {
     transform: translateX(0%);
   }
 }
+
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 40;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.whatsapp-btn:hover {
+  transform: scale(1.1) translateY(-5px);
+}
+
+.whatsapp-btn img {
+  width: 4rem;
+  height: 4rem;
+}
